@@ -66,5 +66,5 @@ String formatCurrency(int value) {
       buffer.write('.');
     }
   }
-  return '\$' + buffer.toString() + ' COP';
+  return '\$${buffer.toString()} COP';
 }
