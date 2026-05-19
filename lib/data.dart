@@ -1,3 +1,5 @@
+import 'package:intl/intl.dart';
+
 class Asset {
   const Asset({
     required this.name,
@@ -56,15 +58,10 @@ const debts = [
   ),
 ];
 
-String formatCurrency(int value) {
-  final digits = value.toString();
-  final buffer = StringBuffer();
-  for (var i = 0; i < digits.length; i++) {
-    buffer.write(digits[i]);
-    final remaining = digits.length - i - 1;
-    if (remaining > 0 && remaining % 3 == 0) {
-      buffer.write('.');
-    }
-  }
-  return '\$${buffer.toString()} COP';
-}
+final _currencyFormat = NumberFormat.currency(
+  locale: 'es_CO',
+  symbol: '\$',
+  decimalDigits: 0,
+);
+
+String formatCurrency(int value) => _currencyFormat.format(value);

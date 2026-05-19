@@ -121,7 +121,7 @@ class MainShell extends StatelessWidget {
                 padding: const EdgeInsets.all(8),
                 child: CircleAvatar(
                   backgroundColor: _surfaceHigh,
-                  child: const Icon(Icons.person, color: _primary),
+                child: Icon(Icons.person, color: _primary),
                 ),
               )
             : IconButton(
@@ -184,7 +184,7 @@ class WelcomePage extends StatelessWidget {
               const Text(
                 'Eonix',
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 44,
                   fontWeight: FontWeight.bold,
                   color: _primary,
@@ -194,7 +194,7 @@ class WelcomePage extends StatelessWidget {
               const Text(
                 'Toma el control de tu futuro financiero hoy.',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
               ),
               const Spacer(),
               ElevatedButton.icon(
@@ -235,10 +235,10 @@ class DashboardPage extends StatelessWidget {
             children: const [
               Text(
                 '\$15.420.000 COP',
-                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 8),
-              Text('Crecimiento +8.4% este mes', style: TextStyle(color: _success)),
+              Text('Crecimiento +8.4% este mes', style: const TextStyle(color: _success)),
             ],
           ),
         ),
@@ -248,7 +248,7 @@ class DashboardPage extends StatelessWidget {
           child: Column(
             children: const [
               SizedBox(height: 12),
-              Text('Ratio 2:1 (Activos vs Deuda)', style: TextStyle(fontWeight: FontWeight.w600)),
+              Text('Ratio 2:1 (Activos vs Deuda)', style: const TextStyle(fontWeight: FontWeight.w600)),
               SizedBox(height: 12),
               LinearProgressIndicator(
                 value: 0.66,
@@ -285,7 +285,7 @@ class DashboardPage extends StatelessWidget {
         const Text(
           'Tu nivel de endeudamiento es del 40%. Intenta reducirlo para mejorar tu Score crediticio.',
           textAlign: TextAlign.center,
-          style: TextStyle(color: _outline, fontWeight: FontWeight.w600),
+          style: const TextStyle(color: _outline, fontWeight: FontWeight.w600),
         ),
       ],
     );
@@ -309,17 +309,17 @@ class _SimulationPageState extends State<SimulationPage> {
       children: [
         const Text(
           'Tu Futuro Financiero',
-          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: _primaryContainer),
+          style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: _primaryContainer),
         ),
         const SizedBox(height: 12),
-        const Text('Proyección de riqueza simulada', style: TextStyle(color: _outline)),
+        const Text('Proyección de riqueza simulada', style: const TextStyle(color: _outline)),
         const SizedBox(height: 20),
         _SectionCard(
           title: 'Patrimonio proyectado',
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
-              Text('\$100.4M COP', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+              Text('\$100.4M COP', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
               SizedBox(height: 12),
               LinearProgressIndicator(value: 0.75, color: _primaryContainer),
             ],
@@ -421,7 +421,7 @@ class ProfilePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
-              Text('Nivel 5', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+              Text('Nivel 5', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               LinearProgressIndicator(value: 0.75, color: _success),
             ],
