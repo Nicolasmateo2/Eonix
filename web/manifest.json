@@ -1,0 +1,9 @@
+{
+  "name": "Eonix",
+  "short_name": "Eonix",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fbf9f8",
+  "theme_color": "#014694",
+  "description": "Control financiero y simulación educativa en Flutter"
+}
