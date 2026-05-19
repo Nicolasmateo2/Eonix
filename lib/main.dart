@@ -184,7 +184,7 @@ class WelcomePage extends StatelessWidget {
               const Text(
                 'Eonix',
                 textAlign: TextAlign.center,
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 44,
                   fontWeight: FontWeight.bold,
                   color: _primary,
@@ -194,7 +194,7 @@ class WelcomePage extends StatelessWidget {
               const Text(
                 'Toma el control de tu futuro financiero hoy.',
                 textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
               ),
               const Spacer(),
               ElevatedButton.icon(
@@ -205,7 +205,7 @@ class WelcomePage extends StatelessWidget {
                   backgroundColor: _primaryContainer,
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 18),
-                  textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ),
               TextButton(
@@ -235,10 +235,10 @@ class DashboardPage extends StatelessWidget {
             children: const [
               Text(
                 '\$15.420.000 COP',
-                style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 8),
-              Text('Crecimiento +8.4% este mes', style: const TextStyle(color: _success)),
+              Text('Crecimiento +8.4% este mes', style: TextStyle(color: _success)),
             ],
           ),
         ),
@@ -248,7 +248,7 @@ class DashboardPage extends StatelessWidget {
           child: Column(
             children: const [
               SizedBox(height: 12),
-              Text('Ratio 2:1 (Activos vs Deuda)', style: const TextStyle(fontWeight: FontWeight.w600)),
+              Text('Ratio 2:1 (Activos vs Deuda)', style: TextStyle(fontWeight: FontWeight.w600)),
               SizedBox(height: 12),
               LinearProgressIndicator(
                 value: 0.66,
@@ -285,7 +285,7 @@ class DashboardPage extends StatelessWidget {
         const Text(
           'Tu nivel de endeudamiento es del 40%. Intenta reducirlo para mejorar tu Score crediticio.',
           textAlign: TextAlign.center,
-          style: const TextStyle(color: _outline, fontWeight: FontWeight.w600),
+          style: TextStyle(color: _outline, fontWeight: FontWeight.w600),
         ),
       ],
     );
@@ -309,17 +309,17 @@ class _SimulationPageState extends State<SimulationPage> {
       children: [
         const Text(
           'Tu Futuro Financiero',
-          style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: _primaryContainer),
+          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: _primaryContainer),
         ),
         const SizedBox(height: 12),
-        const Text('Proyección de riqueza simulada', style: const TextStyle(color: _outline)),
+        const Text('Proyección de riqueza simulada', style: TextStyle(color: _outline)),
         const SizedBox(height: 20),
         _SectionCard(
           title: 'Patrimonio proyectado',
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
-              Text('\$100.4M COP', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+              Text('\$100.4M COP', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
               SizedBox(height: 12),
               LinearProgressIndicator(value: 0.75, color: _primaryContainer),
             ],
@@ -421,7 +421,7 @@ class ProfilePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
-              Text('Nivel 5', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+              Text('Nivel 5', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               LinearProgressIndicator(value: 0.75, color: _success),
             ],
@@ -465,8 +465,8 @@ class _SectionTitle extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(title, style: const TextStyle(fontWeight: FontWeight.bold, color: _primary)),
-        Text(subtitle, style: const TextStyle(color: _outline)),
+        Text(title, style: TextStyle(fontWeight: FontWeight.bold, color: _primary)),
+        Text(subtitle, style: TextStyle(color: _outline)),
       ],
     );
   }
@@ -491,7 +491,7 @@ class _SectionCard extends StatelessWidget {
           children: [
             Text(
               title,
-              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: _outline),
+              style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: _outline),
             ),
             const SizedBox(height: 12),
             child,
@@ -536,9 +536,9 @@ class _ListCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
+                  Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
                   const SizedBox(height: 2),
-                  Text(subtitle, style: const TextStyle(color: _outline, fontSize: 12)),
+                  Text(subtitle, style: TextStyle(color: _outline, fontSize: 12)),
                   if (badge != null)
                     Container(
                       margin: const EdgeInsets.only(top: 6),
@@ -549,13 +549,13 @@ class _ListCard extends StatelessWidget {
                       ),
                       child: Text(
                         badge!,
-                        style: const TextStyle(fontSize: 10, color: _success, fontWeight: FontWeight.bold),
+                        style: TextStyle(fontSize: 10, color: _success, fontWeight: FontWeight.bold),
                       ),
                     ),
                 ],
               ),
             ),
-            Text(trailing, style: const TextStyle(fontWeight: FontWeight.bold)),
+            Text(trailing, style: TextStyle(fontWeight: FontWeight.bold)),
           ],
         ),
       ),
