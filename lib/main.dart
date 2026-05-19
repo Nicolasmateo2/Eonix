@@ -121,7 +121,7 @@ class MainShell extends StatelessWidget {
                 padding: const EdgeInsets.all(8),
                 child: CircleAvatar(
                   backgroundColor: _surfaceHigh,
-                child: Icon(Icons.person, color: _primary),
+                child: const Icon(Icons.person, color: _primary),
                 ),
               )
             : IconButton(
@@ -205,7 +205,7 @@ class WelcomePage extends StatelessWidget {
                   backgroundColor: _primaryContainer,
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 18),
-                  textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ),
               TextButton(
