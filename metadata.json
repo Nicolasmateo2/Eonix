@@ -1,0 +1,8 @@
+{
+  "name": "Eonix",
+  "description": "A high-end financial control center for portfolio management, simulations, and financial literacy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
